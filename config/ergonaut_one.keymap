@@ -7,6 +7,7 @@
 #define RAISE 2
 #define FUNCS 3
 #define NAVIS 4
+#define SPECL 5
 
 / {
         behaviors {
@@ -62,6 +63,14 @@
                 };
         };
 
+        conditional_layers {
+            compatible = "zmk,conditional-layers";
+            tri_layer {
+                if-layers = <LOWER RAISE>;
+                then-layer = <SPECL>;
+            };
+        };
+
         keymap {
                 compatible = "zmk,keymap";
                 default {
@@ -110,4 +119,13 @@
                         >;
                 };
         };
+                specials {
+                        bindings = <
+/*      --------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,-------------------- */
+        &trans               &trans               &trans               &trans               &kp LC(LS(LG(DOWN))) &kp LC(LS(LG(UP)))                        &trans               &trans               &trans               &trans               &trans               &trans
+        &trans               &trans               &trans               &trans               &kp LC(LG(LEFT))     &kp LC(LG(RIGHT))                         &trans               &trans               &trans               &trans               &trans               &trans
+        &trans               &trans               &trans               &trans               &kp LC(LG(DOWN))     &kp LC(LG(UP))                            &trans               &trans               &trans               &trans               &trans               &trans
+                                                                       &trans               &trans               &trans                                    &trans               &trans               &trans
+                        >;
+                };
 };
