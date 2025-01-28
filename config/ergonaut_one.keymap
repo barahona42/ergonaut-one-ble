@@ -88,17 +88,17 @@
                 lower {
                         bindings = <
 /*      --------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,-------------------- */
-        &trans               &kp PLUS             &trans               &trans               &trans               &trans                                    &trans               &kp TILDE            &kp LPAR             &kp RPAR             &kp EQUAL            &kp DEL
-        &trans               &kp EXCL             &kp AT               &kp HASH             &kp DOLLAR           &trans                                    &trans               &kp UNDER            &kp LEFT_BRACKET     &kp RIGHT_BRACKET    &kp PIPE             &kp BACKSLASH
-        &sft_cwd             &kp PERCENT          &kp CARET            &kp AMPERSAND        &kp ASTERISK         &trans                                    &trans               &kp MINUS            &kp LEFT_BRACE       &kp RIGHT_BRACE      &kp GRAVE            &trans     
+        &trans               &kp PLUS             &trans               &trans               &trans               &kp LG(EQUAL)                             &trans               &kp TILDE            &kp LPAR             &kp RPAR             &kp EQUAL            &kp DEL
+        &trans               &kp EXCL             &kp AT               &kp HASH             &kp DOLLAR           &kp LG(MINUS)                             &trans               &kp UNDER            &kp LEFT_BRACKET     &kp RIGHT_BRACKET    &kp PIPE             &kp BACKSLASH
+        &sft_cwd             &kp PERCENT          &kp CARET            &kp AMPERSAND        &kp ASTERISK         &kp LG(KP_N0)                             &trans               &kp MINUS            &kp LEFT_BRACE       &kp RIGHT_BRACE      &kp GRAVE            &trans     
                                                                        &trans               &trans               &trans                                    &trans               &trans               &trans
                         >;
                 };
                 raise {
                         bindings = <
 /*      --------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,-------------------- */
-        &mdia                &trans               &kp UP               &trans               &trans               &trans                                    &trans               &kp N7               &kp N8               &kp N9               &trans               &kp DEL       
-        &trans               &kp LEFT             &kp DOWN             &kp RIGHT            &trans               &trans                                    &trans               &kp N4               &kp N5               &kp N6               &trans               &trans       
+        &mdia                &trans               &kp UP               &trans               &msc SCRL_DOWN       &msc SCRL_UP                              &trans               &kp N7               &kp N8               &kp N9               &trans               &kp DEL       
+        &trans               &kp LEFT             &kp DOWN             &kp RIGHT            &msg SCRL_LEFT       &msc SCRL_RIGHT                           &trans               &kp N4               &kp N5               &kp N6               &trans               &trans       
         &kp LSHFT            &trans               &trans               &trans               &trans               &trans                                    &trans               &kp N1               &kp N2               &kp N3               &trans               &trans       
                                                                        &kp LALT             &kp LGUI             &trans                                    &trans               &kp N0               &kp DOT
                         >;
@@ -106,8 +106,8 @@
                 functions {
                         bindings = <
 /*      --------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,-------------------- */
-        &bt BT_CLR           &trans               &trans               &trans               &msc SCRL_LEFT       &msc SCRL_UP                              &kp F12              &kp F7               &kp F8               &kp F9               &trans               &trans
-        &sys_reset           &bt BT_PRV           &trans               &bt BT_NXT           &msc SCRL_RIGHT      &msc SCRL_DOWN                            &kp F11              &kp F4               &kp F5               &kp F6               &trans               &sys_reset
+        &bt BT_CLR           &trans               &trans               &trans               &trans               &trans                                    &kp F12              &kp F7               &kp F8               &kp F9               &trans               &trans
+        &sys_reset           &bt BT_PRV           &trans               &bt BT_NXT           &trans               &trans                                    &kp F11              &kp F4               &kp F5               &kp F6               &trans               &sys_reset
         &bootloader          &trans               &trans               &trans               &trans               &trans                                    &kp F10              &kp F1               &kp F2               &kp F3               &trans               &bootloader
                                                                        &trans               &trans               &trans                                    &trans               &trans               &trans
                         >;
@@ -115,9 +115,9 @@
                 navigation {
                         bindings = <
 /*      --------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,-------------------- */
-        &kp C_VOL_UP         &trans               &trans               &trans               &kp LC(LS(LG(DOWN))) &kp LC(LS(LG(UP)))                        &trans               &kp PAGE_UP          &kp PAGE_DOWN        &kp LG(UP)           &kp LG(DOWN)         &kp F12
-        &kp C_VOL_DN         &sk LCTRL            &sk LALT             &sk LGUI             &kp LC(LG(LEFT))     &kp LC(LG(RIGHT))                         &trans               &kp LG(LS(LEFT))     &kp LG(LS(RIGHT))    &kp LA(LS(LEFT))     &kp LA(LS(RIGHT))    &trans
-        &kp C_MUTE           &trans               &trans               &trans               &kp LC(LG(DOWN))     &kp LC(LG(UP))                            &trans               &kp LG(LEFT)         &kp LG(RIGHT)        &kp LA(LEFT)         &kp LA(RIGHT)        &trans
+        &kp C_VOL_UP         &kp LC(LG(LEFT))     &kp LC(LG(RIGHT))    &kp LC(LG(DOWN))     &kp LC(LG(UP))       &kp LC(LS(LG(UP)))                        &trans               &kp PAGE_UP          &kp PAGE_DOWN        &kp LG(UP)           &kp LG(DOWN)         &kp F12
+        &kp C_VOL_DN         &trans               &sk LCTRL            &sk LALT             &sk LGUI             &trans                                    &trans               &kp LG(LS(LEFT))     &kp LG(LS(RIGHT))    &kp LA(LS(LEFT))     &kp LA(LS(RIGHT))    &trans
+        &kp C_MUTE           &trans               &trans               &trans               &trans               &trans                                    &trans               &kp LG(LEFT)         &kp LG(RIGHT)        &kp LA(LEFT)         &kp LA(RIGHT)        &trans
                                                                        &trans               &trans               &trans                                    &trans               &trans               &trans
                         >;
                 };
