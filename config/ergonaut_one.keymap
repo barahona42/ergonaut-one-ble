@@ -69,7 +69,7 @@
         conditional_layers {
             compatible = "zmk,conditional-layers";
             tri_layer {
-                if-layers = <LOWER RAISE>;
+                if-layers = <RAISE FUNCS>;
                 then-layer = <SPECL>;
             };
         };
@@ -125,8 +125,8 @@
                 specials {
                         bindings = <
 /*      --------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,-------------------- */
-        &trans               &trans               &trans               &trans               &kp LC(LS(LG(DOWN))) &kp LC(LS(LG(UP)))                        &trans               &trans               &trans               &trans               &trans               &trans
-        &trans               &trans               &trans               &trans               &kp LC(LG(LEFT))     &kp LC(LG(RIGHT))                         &trans               &trans               &trans               &trans               &trans               &trans
+        &trans               &trans               &kp LG(TAB)          &trans               &kp LC(LS(LG(DOWN))) &kp LC(LS(LG(UP)))                        &trans               &trans               &trans               &trans               &trans               &trans
+        &trans               &kp LC(LS(TAB))      &kp LG(LS(TAB))      &kp LC(TAB)          &kp LC(LG(LEFT))     &kp LC(LG(RIGHT))                         &trans               &trans               &trans               &trans               &trans               &trans
         &trans               &trans               &trans               &trans               &kp LC(LG(DOWN))     &kp LC(LG(UP))                            &trans               &trans               &trans               &trans               &trans               &trans
                                                                        &trans               &trans               &trans                                    &trans               &trans               &trans
                         >;
