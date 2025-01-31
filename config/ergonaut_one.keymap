@@ -34,44 +34,14 @@
                         tapping-term-ms = <200>;
                         bindings = <&kp LSHFT>, <&caps_word>, <&kp CAPS>;
                 };
-                lgui_vcx: tap_dance_lgui_vcx {
-                        compatible = "zmk,behavior-tap-dance";
-                        #binding-cells = <0>;
-                        tapping-term-ms = <200>;
-                        bindings = <&kp LG(V)>,<&kp LG(C)>,<&kp LG(X)>;
-                };
-                lgui_zy: tap_dance_lgui_zy {
-                        compatible = "zmk,behavior-tap-dance";
-                        #binding-cells = <0>;
-                        tapping-term-ms = <200>;
-                        bindings = <&kp LG(Z)>,<&kp LG(Y)>;
-                };
-                frmconf: tap_dance_firmware_conf {
-                        compatible = "zmk,behavior-tap-dance";
-                        #binding-cells = <0>;
-                        tapping-term-ms = <200>;
-                        bindings = <&sys_reset>, <&bootloader>;
-                };
-                line_left: tap_dance_line_left {
-                        compatible = "zmk,behavior-tap-dance";
-                        #binding-cells = <0>;
-                        tapping-term-ms = <200>;
-                        bindings = <&kp LA(LEFT)>, <&kp LG(LEFT)>, <&kp LG(LS(LEFT))>;
-                };
-                line_right: tap_dance_line_right {
-                        compatible = "zmk,behavior-tap-dance";
-                        #binding-cells = <0>;
-                        tapping-term-ms = <200>;
-                        bindings = <&kp LA(RIGHT)>, <&kp LG(RIGHT)>, <&kp LG(LS(RIGHT))>;
-                };
         };
 
         conditional_layers {
-            compatible = "zmk,conditional-layers";
-            tri_layer {
-                if-layers = <RAISE FUNCS>;
-                then-layer = <SPECL>;
-            };
+                compatible = "zmk,conditional-layers";
+                tri_layer {
+                        if-layers = <RAISE FUNCS>;
+                        then-layer = <SPECL>;
+                };
         };
 
         keymap {
