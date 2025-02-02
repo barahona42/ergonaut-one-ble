@@ -70,8 +70,8 @@
                         display-name = "RAISE";
                         bindings = <
 /*      --------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,-------------------- */
-        &mdia                &trans               &kp UP               &trans               &msc SCRL_DOWN       &msc SCRL_UP                              &trans               &kp N7               &kp N8               &kp N9               &trans               &kp DEL       
-        &trans               &kp LEFT             &kp DOWN             &kp RIGHT            &msc SCRL_LEFT       &msc SCRL_RIGHT                           &trans               &kp N4               &kp N5               &kp N6               &trans               &trans       
+        &mdia                &trans               &kp UP               &trans               &trans               &kp PAGE_UP                               &trans               &kp N7               &kp N8               &kp N9               &trans               &kp DEL       
+        &trans               &kp LEFT             &kp DOWN             &kp RIGHT            &trans               &kp PAGE_DOWN                             &trans               &kp N4               &kp N5               &kp N6               &trans               &trans       
         &kp LSHFT            &trans               &trans               &trans               &trans               &trans                                    &trans               &kp N1               &kp N2               &kp N3               &trans               &trans       
                                                                        &kp LALT             &kp LGUI             &trans                                    &trans               &kp N0               &kp DOT
                         >;
@@ -90,7 +90,7 @@
                         display-name = "NAVIGATION";
                         bindings = <
 /*      --------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,-------------------- */
-        &kp C_VOL_UP         &trans               &trans               &trans               &trans               &trans                                    &trans               &kp PAGE_UP          &kp PAGE_DOWN        &trans               &trans               &trans
+        &kp C_VOL_UP         &trans               &trans               &trans               &trans               &trans                                    &trans               &trans               &trans               &trans               &trans               &trans
         &kp C_VOL_DN         &trans               &sk LCTRL            &sk LALT             &sk LGUI             &trans                                    &trans               &trans               &trans               &trans               &trans               &trans
         &kp C_MUTE           &trans               &trans               &trans               &trans               &trans                                    &trans               &trans               &trans               &trans               &trans               &trans
                                                                        &trans               &trans               &trans                                    &trans               &trans               &trans
@@ -100,9 +100,9 @@
                         display-name = "SPECIALS";
                         bindings = <
 /*      --------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,-------------------- */
-        &trans               &kp LC(LS(LG(DOWN))) &kp LC(LG(UP))       &kp LC(LS(LG(UP)))   &trans               &trans                                    &trans               &trans               &trans               &trans               &trans               &trans
-        &trans               &kp LC(LG(LEFT))     &kp LC(LG(DOWN))     &kp LC(LG(RIGHT))    &trans               &trans                                    &trans               &trans               &trans               &trans               &trans               &trans
-        &trans               &trans               &trans               &trans               &trans               &trans                                    &trans               &trans               &trans               &trans               &trans               &trans
+        &trans               &kp LC(LS(LG(DOWN))) &kp LC(LG(UP))       &kp LC(LS(LG(UP)))   &trans               &msc SCRL_UP                              &trans               &trans               &trans               &trans               &trans               &trans
+        &trans               &kp LC(LG(LEFT))     &kp LC(LG(DOWN))     &kp LC(LG(RIGHT))    &trans               &msc SCRL_DOWN                            &trans               &trans               &trans               &trans               &trans               &trans
+        &trans               &trans               &trans               &trans               &msc SCRL_LEFT       &msg SCRL_RIGHT                           &trans               &trans               &trans               &trans               &trans               &trans
                                                                        &trans               &trans               &trans                                    &trans               &trans               &trans
                         >;
                 };
