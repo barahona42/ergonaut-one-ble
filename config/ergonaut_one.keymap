@@ -100,8 +100,8 @@
                         display-name = "SPECIALS";
                         bindings = <
 /*      --------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,-------------------- */
-        &trans               &kp LC(LS(LG(DOWN))) &kp LC(LG(UP))       &kp LC(LS(LG(UP)))   &trans               &msc SCRL_UP                              &trans               &trans               &bt BT_SEL 3         &bt BT_SEL 4         &bt BT_SEL 5         &bt BT_CLR
-        &trans               &kp LC(LG(LEFT))     &kp LC(LG(DOWN))     &kp LC(LG(RIGHT))    &trans               &msc SCRL_DOWN                            &trans               &trans               &bt BT_SEL 0         &bt BT_SEL 1         &bt BT_SEL 2         &bt BT_NXT
+        &trans               &kp LC(LS(LG(DOWN))) &kp LC(LG(UP))       &kp LC(LS(LG(UP)))   &trans               &msc SCRL_UP                              &trans               &bt BT_SEL 3         &bt BT_SEL 4         &bt BT_SEL 5         &trans               &bt BT_CLR
+        &trans               &kp LC(LG(LEFT))     &kp LC(LG(DOWN))     &kp LC(LG(RIGHT))    &trans               &msc SCRL_DOWN                            &trans               &bt BT_SEL 0         &bt BT_SEL 1         &bt BT_SEL 2         &trans               &bt BT_NXT
         &trans               &trans               &trans               &trans               &msc SCRL_LEFT       &msc SCRL_RIGHT                           &trans               &trans               &trans               &trans               &trans               &bt BT_PRV
                                                                        &trans               &trans               &trans                                    &trans               &trans               &trans
                         >;
