@@ -102,7 +102,7 @@
 /*      --------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,-------------------- */
         &trans               &kp LC(LS(LG(DOWN))) &kp LC(LG(UP))       &kp LC(LS(LG(UP)))   &trans               &msc SCRL_UP                              &trans               &trans               &trans               &trans               &trans               &trans
         &trans               &kp LC(LG(LEFT))     &kp LC(LG(DOWN))     &kp LC(LG(RIGHT))    &trans               &msc SCRL_DOWN                            &trans               &trans               &trans               &trans               &trans               &trans
-        &trans               &trans               &trans               &trans               &msc SCRL_LEFT       &msg SCRL_RIGHT                           &trans               &trans               &trans               &trans               &trans               &trans
+        &trans               &trans               &trans               &trans               &msc SCRL_LEFT       &msc SCRL_RIGHT                           &trans               &trans               &trans               &trans               &trans               &trans
                                                                        &trans               &trans               &trans                                    &trans               &trans               &trans
                         >;
                 };
