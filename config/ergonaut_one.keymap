@@ -92,7 +92,7 @@
 /*      --------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,-------------------- */
         &trans               &trans               &trans               &trans               &trans               &trans                                    &trans               &trans               &trans               &trans               &trans               &trans
         &trans               &trans               &sk LCTRL            &sk LALT             &sk LGUI             &trans                                    &trans               &trans               &trans               &trans               &trans               &trans
-        &kp F12              &kp LC(LA(LT))       &kp LC(LA(RT))       &kp HOME             &kp END              &trans                                    &trans               &trans               &trans               &trans               &trans               &trans
+        &kp F12              &kp LC(LA(LT))       &kp LC(LA(GT))       &kp HOME             &kp END              &trans                                    &trans               &trans               &trans               &trans               &trans               &trans
                                                                        &trans               &trans               &trans                                    &trans               &trans               &trans
                         >;
                 };
