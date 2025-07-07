@@ -60,8 +60,8 @@
                         display-name = "LOWER";
                         bindings = <
 /*      --------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,-------------------- */
-        &trans               &kp PLUS             &trans               &trans               &trans               &kp LG(EQUAL)                             &trans               &kp TILDE            &kp LPAR             &kp RPAR             &kp EQUAL            &kp DEL
-        &trans               &kp EXCL             &kp AT               &kp HASH             &kp DOLLAR           &kp LG(MINUS)                             &trans               &kp UNDER            &kp LEFT_BRACKET     &kp RIGHT_BRACKET    &kp PIPE             &kp BACKSLASH
+        &kp LG(LS(A))        &kp PLUS             &trans               &trans               &trans               &kp LG(EQUAL)                             &trans               &kp TILDE            &kp LPAR             &kp RPAR             &kp EQUAL            &kp DEL
+        &kp LG(TILDE)        &kp EXCL             &kp AT               &kp HASH             &kp DOLLAR           &kp LG(MINUS)                             &trans               &kp UNDER            &kp LEFT_BRACKET     &kp RIGHT_BRACKET    &kp PIPE             &kp BACKSLASH
         &kp CAPS             &kp PERCENT          &kp CARET            &kp AMPERSAND        &kp ASTERISK         &kp LG(KP_N0)                             &trans               &kp MINUS            &kp LEFT_BRACE       &kp RIGHT_BRACE      &kp GRAVE            &trans     
                                                                        &trans               &trans               &trans                                    &trans               &trans               &trans
                         >;
@@ -90,8 +90,8 @@
                         display-name = "NAVIGATION";
                         bindings = <
 /*      --------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,--------------------,-------------------- */           
-        &kp F12              &kp LC(LA(COMMA))    &kp LC(LA(DOT))      &trans               &trans               &trans                                    &trans               &trans               &trans               &trans               &trans               &trans
-        &kp LA(F8)           &trans               &sk LCTRL            &sk LALT             &sk LGUI             &trans                                    &trans               &trans               &trans               &trans               &trans               &trans
+        &trans               &trans               &trans               &trans               &trans               &trans                                    &trans               &trans               &trans               &trans               &trans               &trans
+        &trans               &trans               &sk LCTRL            &sk LALT             &sk LGUI             &trans                                    &trans               &trans               &trans               &trans               &trans               &trans
         &trans               &trans               &trans               &trans               &trans               &trans                                    &trans               &trans               &trans               &trans               &trans               &trans
                                                                        &trans               &trans               &trans                                    &trans               &trans               &trans
                         >;
